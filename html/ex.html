@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        div.items{
+            display: flex;
+        }
+        div.item{
+            width: 50%;
+            border: 1px dotted black;
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        div.image{
+            width: 120px;
+            height: 120px;
+            border: 1px solid black;
+             display: inline-block;
+        }
+        .image:hover{
+            transform: scale(.9);
+        }
+        div.image + div{
+            display: inline-block;
+        }
+    </style>
+    <script>
+        function doimau(obj){
+            var p = `${obj.value}`;
+            var color = p.split(",");
+            var color1 = color[0];
+            var color2 = color[1];
+            var s = document.getElementById("main");
+            s.setAttribute("style",`background-image: linear-gradient(${color1},${color2});`);
+            if(color.length < 2)
+            {
+                alert("Nhap sai");
+            }
+        }   
+    </script> -->
+    <style>
+        html{
+            font-size: 14px;
+        }
+        .main{
+            display: flex;
+        }
+        .ads{
+            width: 20%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px 0;
+        }
+        .video{
+            width: 60%;
+        
+        }
+        .video > div:first-child{
+            border: 1px solid black;
+            height: 200px;
+            margin: 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+        }
+        .ctrl > a{
+            background-color: antiquewhite;
+            border: 1px solid black;
+            padding: 2px;
+            text-decoration: none;
+            color: black;
+            margin-left: 5px;
+        }
+        .ctrl{
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        var x = "This is a new book";
+        console.info(x.split("is").length);
+    </script>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="ads">LIÊN HỆ QUẢNG CÁO</div>
+        <div class="video">
+            <div><span>VIDEO</span></div>
+            <div class="ctrl">
+                <a href="#" id="btnPlay">Play</a>
+                <a href="#" id="btnStop">Pause</a>
+            </div>
+        </div>
+        <div class="ads">LIÊN HỆ QUẢNG CÁO</div>
+    </div>
+    <!-- <input type="text" onchange="doimau(this)">
+    <div class="items">
+        <div class="item">
+            <div class="image">HTML (120x120) </div>
+            <div><a href="#">HTML</a></div>
+            <div>HTML for Beginner</div>
+        </div>
+        <div class="item">
+            <div class="image">CSS (120x120) </div>
+            <div><a href="#">CSS</a></div>
+            <div>CSS for Beginner</div>
+        </div>
+    </div> -->
+</body>
+</html>
